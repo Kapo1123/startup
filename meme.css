@@ -47,8 +47,10 @@ header{
     float:right;
   }
   .searchbar-middle{
+    position:fixed;
     width:10%;
-    margin-left:1650px;
+    left:1650px;
+    top:3px;
     
   }
   .searchTerm{
