@@ -1,0 +1,72 @@
+body{
+    display:flex;
+    flex-direction: column;
+    min-width: 375px;
+      margin: 0;
+}
+
+header{
+    flex: 0 80px;
+    flex-wrap: wrap;
+    background-color: rgba(33,37,41); ;
+    width: 100%;
+}
+main{
+    /* flex: 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgba(0, 0, 0, 0.55) */
+  }
+#meme{
+    padding-left: 0.3em;
+    border-bottom: solid rgb(182, 182, 182) thin;
+}
+  .pages{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+  }
+  .headerlist{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    width:40%
+  }
+  .topbar{
+    color:white;
+  }
+  .navbar-lefttop{
+    text-decoration: none;
+
+  }
+  .botton-right{
+    display:flex;
+    float:right;
+  }
+  .searchbar-middle{
+    float: left;
+    margin-left: 50%;
+    top: -200%;
+    height:20%;
+    display:relative;
+  }
+  .searchTerm{
+    text-align: center;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* height: 2.5rem;     */
+    background-color: rgba(33,37,41);
+    color: white;
+  }
+  .text-reset{
+    float:right;
+  }
