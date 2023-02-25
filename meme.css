@@ -129,3 +129,40 @@ main{
         font-size:x-large;
         margin: 0;
       }
+      .yournum{
+        list-style: none;
+      }
+      .history-title{
+        position: relative;
+        font:bolder;
+        font-size: xx-large;
+        right: 600px;}
+      
+      .history-item{
+        list-style: none;
+        text-align: center;
+      }
+      .history-list{
+        font-size: 16px;
+        font-family: Arial;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .history-name{
+ 
+        position: relative;
+        font:bolder;
+        font-size: xx-large;
+        right: 600px;
+        list-style: none;
+       
+      }
+      .history-item{
+
+    
+        position: relative;
+        font:bolder;
+        font-size: xx-large;
+      }
+
+      
