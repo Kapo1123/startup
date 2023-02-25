@@ -15,3 +15,5 @@ Key features:
     able to comment and save stores
     
    The first Simon went well. I was able to use different html code and recreate a Simon. However, I was having issues when I tried to sync my push with Github. It fraustrated me but I am glad it finally worked out.
+
+I decided to change my start up application to a webiste for meme, where people can share their favourite memes and others can common it.
