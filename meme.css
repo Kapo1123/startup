@@ -11,14 +11,6 @@ header{
     background-color: rgba(33,37,41); ;
     width: 100%;
 }
-main{
-    /* flex: 1 calc(100vh - 110px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color:rgba(0, 0, 0, 0.55) */
-  }
 #meme{
     padding-left: 0.3em;
     border-bottom: solid rgb(182, 182, 182) thin;
@@ -28,6 +20,7 @@ main{
     display: flex;
     flex-direction: row;
     list-style: none;
+    color:white;
     
   }
   .headerlist{
@@ -36,7 +29,7 @@ main{
     flex-direction: row;
     list-style: none;
     margin: 0;
-    width:40%
+    width:40%;
   }
   .topbar{
     color:white;
@@ -50,23 +43,85 @@ main{
     float:right;
   }
   .searchbar-middle{
-    float: left;
+    display:fixed;
     margin-left: 50%;
-    top: -200%;
-    height:20%;
-    display:relative;
+    height:100%;
+    display:fixed;
+    background-color: yellow;
   }
   .searchTerm{
     text-align: center;
   }
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* height: 2.5rem;     */
-    background-color: rgba(33,37,41);
-    color: white;
-  }
-  .text-reset{
-    float:right;
-  }
+  a:link{
+       
+    color:white;
+}
+a:visited{
+    color:white;
+}
+
+
+
+/* /*header/* */
+
+main{
+    flex: 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgba(0, 0, 0, 0.55);
+    margin:0;
+    }
+
+    .video{
+        width:50%;
+        height:600px;
+        display:grid;
+    }
+    .comment{
+        border:solid;
+        border-radius: 20px;
+        padding:200px;
+        position:fixed;
+        right:150px;
+        top: 300px;
+        display:flex;
+    }
+    #commentbox{
+        border:solid;
+        position:fixed;
+        top:800px;
+    }
+    .form{
+        background-color:red;
+        position:fixed;
+        right:150px;
+        top: 700px;
+        display:flex;
+        flex-direction: row;
+
+    }
+
+    /* footer */
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+        background-color: rgba(33,37,41);
+        margin: 0;
+        font:200em;
+        padding: 0;
+      }
+
+      .text-reset{
+        float:right;
+        font-size:x-large;
+        margin: 0;
+        color:white;
+      }
+      .text-left{
+        font-size:x-large;
+        margin: 0;
+      }
