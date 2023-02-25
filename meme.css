@@ -38,16 +38,18 @@ header{
     text-decoration: none;
 
   }
+  .rightside{
+    display:flex;
+    flex-direction: column;
+  }
   .botton-right{
     display:flex;
     float:right;
   }
   .searchbar-middle{
-    display:fixed;
-    margin-left: 50%;
-    height:100%;
-    display:fixed;
-    background-color: yellow;
+    width:10%;
+    margin-left:1650px;
+    
   }
   .searchTerm{
     text-align: center;
