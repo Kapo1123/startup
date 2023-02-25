@@ -17,3 +17,5 @@ Key features:
    The first Simon went well. I was able to use different html code and recreate a Simon. However, I was having issues when I tried to sync my push with Github. It fraustrated me but I am glad it finally worked out.
 
 I decided to change my start up application to a webiste for meme, where people can share their favourite memes and others can common it.
+
+This CSS and HTML start up is hard for me. I spent couple hours to final have something coded. I can tell that I have learned a lot during this assignment. But I also see that there are concepts that I don't understand well. I took another hour to try and figure how to create a vertical list and a horizontal list.
