@@ -19,3 +19,46 @@ Key features:
 I decided to change my start up application to a webiste for meme, where people can share their favourite memes and others can common it.
 
 This CSS and HTML start up is hard for me. I spent couple hours to final have something coded. I can tell that I have learned a lot during this assignment. But I also see that there are concepts that I don't understand well. I took another hour to try and figure how to create a vertical list and a horizontal list.
+
+DOM accessing all element:
+	function displayElement(el) {
+  console.log(el.tagName);
+  for (const child of el.children) {
+    displayElement(child);
+  }
+}
+
+displayElement(document);
+
+
+DOM - insert, modify, or delete
+
+Create a new element:
+	create the element on the DOM document
+	const newChild = document.createElement('div');
+  newChild.textContent = text;
+insert the new element into the DOM tree by appending it to an existing element in the tree.
+const parentElement = document.querySelector(parentSelector);
+  parentElement.appendChild(newChild);
+Removing - removeChild
+function deleteChild(parentSelector) {
+  const el = document.querySelector(parentSelector);
+  el.parentElement.removeChild(el);
+}
+
+deleteChild('#courses div’);
+Injecting HTML
+Find the first element in te DOM and replace it
+const el = document.querySelector('div');
+el.innerHTML = '<div class="injected"><b>Hello</b>!</div>'
+Event Listeners
+
+const submitDataEl = document.querySelector('#submitData');
+submitDataEl.addEventListener('click', function (event) {
+  console.log(event.type);
+});
+Clipboard	Cut, copied, pasted
+Focus	An element gets focus
+Keyboard	Keys are pressed
+Mouse	Click events
+Text selection	When text is selected
