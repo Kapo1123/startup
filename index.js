@@ -21,7 +21,7 @@ function button_click(e){
     const newrow = document.createElement("tr");
     const button = document.createElement("button");
     button.textContent = "delete";
-    button.style.fontSize ="10px";
+    button.style.fontSize ="medium";
     button.className='delete'+b;
     button.type = "submit";
     date.textContent =  "11/01/2023";
