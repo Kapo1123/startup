@@ -20,18 +20,39 @@ function button_click(e){
     const button_row = document.createElement("td");
     const newrow = document.createElement("tr");
     const button = document.createElement("button");
-    button.textContent = "delect";
+    button.textContent = "delete";
     button.style.fontSize ="10px";
+    button.className='delete'+b;
+    button.type = "submit";
     date.textContent =  "11/01/2023";
     url.textContent = input_element.value;
     button_row.appendChild(button);
+    button_row.dataset.id = b;
     newrow.appendChild(date);
     newrow.appendChild(url);
     newrow.appendChild(button_row);
     table.appendChild(newrow);
-    newrow.id ="table"+b;
+    newrow.className ='add'+b;
     b++;
+    input_element.value = '';
 }
-// function 
+let i =1;
+
+  const deleteButton = document.getElementsByClassName("delete1");
+  deleteButton.addEventListener('click', delete_click,false);
+
+  
+
+    function delete_click(e){
+      e.preventDefault();
+      // const id = deleteButton.dataset.id;
+
+      // Get a reference to the parent element
+      const rowElement = document.getElementById("table1");
+
+      // Get the class name of the parent element
+      rowElement.parentNode.removeChild(rowElement);
+}
+
     
   
