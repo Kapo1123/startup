@@ -62,3 +62,8 @@ Focus	An element gets focus
 Keyboard	Keys are pressed
 Mouse	Click events
 Text selection	When text is selected
+
+
+
+
+This time I created javascript files for my startup. I learned simple function and high-order functions on Javascript. I tried to make the table and the delete buttons on each row. The problems was on the for loop and I finally firgured to put it on my click_press function to have addeventlistener to all my delete_button. All of all, I am satisified on applying waht I have learned.
