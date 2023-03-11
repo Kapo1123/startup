@@ -33,24 +33,22 @@ function button_click(e){
     newrow.appendChild(button_row);
     table.appendChild(newrow);
     newrow.className ='add'+b;
-    b++;
+    
+    for(let i =0; i<b;i++){
+    const deleteButton = document.getElementsByClassName("delete"+b);
+    deleteButton[0].addEventListener("click",delete_click,false);}
     input_element.value = '';
+    b++;
 }
-let i =1;
+// let i =1;
 
-  const deleteButton = document.getElementsByClassName("delete1");
-  deleteButton.addEventListener('click', delete_click,false);
-
-  
+//   const deleteButton = document.getElementsByClassName("delete"+b);
+//   deleteButton[0].addEventListener("click",delete_click,false);
 
     function delete_click(e){
       e.preventDefault();
-      // const id = deleteButton.dataset.id;
-
-      // Get a reference to the parent element
-      const rowElement = document.getElementById("table1");
-
-      // Get the class name of the parent element
+      const id = e.target.parentNode.dataset.id;
+      const rowElement = document.querySelector('.add' + id);
       rowElement.parentNode.removeChild(rowElement);
 }
 
