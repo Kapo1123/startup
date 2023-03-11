@@ -338,4 +338,29 @@ main{
    #login-table{
    
    }
+   /* index-page */
+   .form1{
+    display:flex;
+    height: 20px;
+    justify-content: center;
+    width:100%;
+   }
+   .input1{
+    width:50%;
+   }
+   .div-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%
+   }
+   .table1{
+    width:100%;
+    font-size: x-large;
+    border:solid red;
+   }
+   .th1{
+    text-align: center;
+   }
     
