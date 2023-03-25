@@ -67,3 +67,6 @@ Text selection	When text is selected
 
 
 This time I created javascript files for my startup. I learned simple function and high-order functions on Javascript. I tried to make the table and the delete buttons on each row. The problems was on the for loop and I finally firgured to put it on my click_press function to have addeventlistener to all my delete_button. All of all, I am satisified on applying waht I have learned.
+
+
+In Simon Service, I reinforce my knowledge on how to set up service using node.js. I also learned how to use express to work with my service. I do still need more time to understand and figure how to use node.js and express to build the back-end for my Start-up application
