@@ -70,3 +70,37 @@ This time I created javascript files for my startup. I learned simple function a
 
 
 In Simon Service, I reinforce my knowledge on how to set up service using node.js. I also learned how to use express to work with my service. I do still need more time to understand and figure how to use node.js and express to build the back-end for my Start-up application
+
+
+In simon database, I learned how to set up database and code that will help set up the mongo database. I realise that database is really useful and looking foward to exploring more its functions
+
+const {MongoClient} = require('mongodb');
+
+const userName = process.env.MONGOUSER;
+const password = process.env.MONGOPASSWORD;
+const hostname = process.env.MONGOHOSTNAME;
+
+if (!userName) {
+  throw Error('Database not configured. Set environment variables');
+}
+
+const url = `mongodb+srv://${userName}:${password}@${hostname}`;
+
+const client = new MongoClient(url);
+const scoreCollection = client.db('simon').collection('score');
+
+function addScore(score) {
+  scoreCollection.insertOne(score);
+}
+
+function getHighScores() {
+  const query = {score: {$gt: 0}};
+  const options = {
+    sort: {score: -1},
+    limit: 10,
+  };
+  const cursor = scoreCollection.find(query, options);
+  return cursor.toArray();
+}
+
+module.exports = {addScore, getHighScores};
