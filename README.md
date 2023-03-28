@@ -104,3 +104,6 @@ function getHighScores() {
 }
 
 module.exports = {addScore, getHighScores};
+
+
+THis time I looked at the code of login. It was amazing to see that we can use database to create a login credential authorisation test. From reading the code, I understand more about connecting to myy db and creating connection. I am looking forward to put login function in my start application
