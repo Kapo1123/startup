@@ -107,3 +107,10 @@ module.exports = {addScore, getHighScores};
 
 
 THis time I looked at the code of login. It was amazing to see that we can use database to create a login credential authorisation test. From reading the code, I understand more about connecting to myy db and creating connection. I am looking forward to put login function in my start application
+
+This time I learned about web-socket. Websock is such an interesting function to build. It helps to cuild an instant communcation application on my start up and Simon. I learned how to update from http to ws, and also the code to broadcast the message when needed and how to react when receive the message.
+
+This time I completed my start-up and was able to connect my mongodb and websocket to my application. It is now listening on port 4000 and is ready to connect the server and looking to save new urls. I would want to upgrade it so it will show all the urls's gif on the explore page.
+
+This time I worked on my react Simon. React is completely new. It app.jsx combinde all the componenets in one page. I also figured out how to debug the react. IT is the most important thing I learn this time. I also learned route. I am going to watch Professor's video 
+
